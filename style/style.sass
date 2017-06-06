@@ -1,0 +1,76 @@
+body
+  height: 100vh
+  width: 100vw
+  margin: 0
+  padding: 0
+  overflow: hidden
+
+main
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  background: whitesmoke
+
+  #game
+    width: 30vw
+    height: 75vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background: whitesmoke
+    font-size: 4em
+    color: white
+    text-shadow: 0 0 5px black
+    transition: all .3s ease-in-out
+    cursor: pointer
+
+  #bottom
+    width: 30vw
+    height: 10vh
+    display: flex
+    justify-content: space-around
+    align-items: center
+    font-weight: bold
+    font-size: 2em
+    color: white
+    background: rgba(0, 0, 0, 0.8)
+
+    .bElem
+      width: 45%
+
+    #col
+      text-shadow: 0 0 2px white
+
+    #score
+      text-align: right
+
+// Tablets
+@media screen and (max-width: 770px)
+  main
+    justify-content: space-between
+
+  #game
+    width: 100vw !important
+    height: 85vh !important
+
+  #bottom
+    width: 100vw !important
+    height: 15vh !important
+    font-size: 3em !important
+
+// Phones
+@media (max-width: 440px)
+  main
+    justify-content: space-between
+
+  #game
+    width: 100vw !important
+    height: 90vh !important
+
+  #bottom
+    width: 100vw !important
+    height: 10vh !important
+    font-size: 2.5em !important

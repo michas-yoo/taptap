@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; }
+
+main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: whitesmoke; }
+  main #game {
+    width: 30vw;
+    height: 75vh;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 4em;
+    color: white;
+    text-shadow: 0 0 5px black;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer; }
+  main #bottom {
+    width: 30vw;
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 2em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: bold; }
+    main #bottom .bElem {
+      width: 45%; }
+    main #bottom #col {
+      text-shadow: 0 0 2px white; }
+    main #bottom #score {
+      text-align: right; }
+
+@media screen and (max-width: 770px) {
+  main {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #game {
+    width: 100vw !important;
+    height: 85vh !important; }
+  #bottom {
+    width: 100vw !important;
+    height: 15vh !important;
+    font-size: 3em !important; } }
+
+@media (max-width: 440px) {
+  main {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #game {
+    width: 100vw !important;
+    height: 90vh !important; }
+  #bottom {
+    width: 100vw !important;
+    height: 10vh !important;
+    font-size: 2.5em !important; } }
+
+/*# sourceMappingURL=style.css.map */
