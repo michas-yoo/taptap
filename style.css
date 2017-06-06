@@ -1,0 +1,103 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;	
+	width: 100vw;
+	font-family: 'Roboto', sans-serif;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+#main{
+	width: 300px;
+	height: 400px;
+	transition: all .3s ease-in-out;
+	font-size: 4em;
+	color: white;
+	text-shadow: 0 0 5px black;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+#bottom{
+	width: 300px;
+	height: 50px;
+	background: rgba(0,0,0,.8);
+	color: white;
+	font-size: 2em;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+#bottom > div{
+	width: 45%;
+}
+
+#col{
+	text-shadow: 0 0 3px white;
+}
+
+#score{
+	text-align: right;
+}
+
+@media (max-width: 770px){
+	body{
+		justify-content: space-between;
+	}
+	#main{
+		width: 100vw;
+		height: 85vh;
+	}
+	#bottom{
+		width: 100vw;
+		height: 15vh;
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 440px){
+	body{
+		justify-content: space-between;
+	}
+	#main{
+		width: 100vw;
+		height: 90vh;
+	}
+	#bottom{
+		width: 100vw;
+		height: 10vh;
+		font-size: 2.5em;
+	}
+}
