@@ -14,3 +14,5 @@ No! It caches all important files when you open it, so even when you're not conn
 
 ## Who is the author?
 Originally it's a mobile game created by [CrazyAlarmClock](https://github.com/CrazyAlarmClock). But it was improved by me, **Michas**. New animation, better engine that doesn't allow same colors to appear consistently (if previous color was red, it will not appear again), minimum memory required.
+
+# [Try it out right now!](https://michas-yoo.github.io/taptap/)
